@@ -1,0 +1,56 @@
+body{
+	width: 75em; /*este diseño es elastico asi que no deberia tener un ancho fijo*/
+	padding: 0;
+	margin: 0;
+}
+
+
+div	{
+	border:1px solid red;
+}
+
+#cabecera, #pie{
+	text-align: center;
+}
+
+#menu, #contenido, #info{
+	padding: 0;
+	margin: 0;
+	height: 8em;/*con esta propiedad aqui y en ino se alinean abajo*/
+}
+
+#menu{
+	position: absolute;
+	width: 10em;
+}
+
+#contenido{
+	position:absolute; /*Si contenido va primero entonces es absolute e info relative*/
+	left:10em;
+	width: 40em;
+	
+}
+
+#info{
+	position: relative; /*Si info va primero entonces es absolute y contenido relative*/
+	left: 50em;
+	width: 25em;
+	
+}
+
+/*esta puta regla era la que hacia el desalineado
+#info h2{
+	margin-top: 0;
+}*/
+
+/*Pero para que se vea bien hay que hacer la linea anterior pero para info y contenido
+y por separado porque nose porque chucha no funka junto*/
+
+#info h2{
+	margin-top: 0;
+}
+
+#contenido h2{
+	margin-top: 0;
+}
+

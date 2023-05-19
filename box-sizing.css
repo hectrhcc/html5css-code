@@ -1,0 +1,22 @@
+.box-sizing-content, .box-sizing-border{
+	width:38em;
+	border: 1em solid black;
+}
+
+.box-sizing-content .split{
+	box-sizing: content-box; /*es mas del 50% porque solo incluye el contenido*/		
+	width:50%;               /*por eso que si se le suma el espacio interior y borde*/
+	border:1em silver ridge;  /* sale mas del 50% y no alcanza a colocar los 2 div*/
+	float: left;
+}
+
+.box-sizing-border .split{
+	box-sizing: border-box;  /*este incluye el borde y espacio interior por eso alcanza*/
+	width:50%;                   /* sale 2 div juntos porque si hay espacio*/
+	border:1em silver ridge;
+	float: left;
+}
+
+.clear-both{
+	clear: both;
+}

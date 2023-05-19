@@ -1,0 +1,14 @@
+/*
+estilo por defecto de un agente de usuario por defecto*/
+
+h1 {
+	font-weight: bold;
+	font-style:italic; /*añadido*/ 
+}
+
+/*el estilo de usuario tiene mas prioridad que el agente de usuario*/
+/*ESTA ES LA HOJA DEL ESTILO DE USUARIO*/
+
+p{
+	color: blue;
+}

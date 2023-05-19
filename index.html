@@ -1,0 +1,242 @@
+<!--
+html4.0
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+Xhtml1.0
+
+<!DOCTYPE html PUBLIC "//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml/DTD/xhtml11-strict.dtd">
+
+HTML5
+<!DOCTYPE HTML>
+-->
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<META charset="UTF-8">
+	<META name ="keywords" content="html5,html,tags,elementos">
+	<title>Repaso html</title>
+</head>
+<style>
+  body {
+    background-color: black;
+    color: white;
+  }
+</style>
+<header>
+<h1>El título mas grande</h1>
+</header>
+<nav>
+	<ul>
+	<li><a href="#">Principal</a></li>
+	<li><a href="#">Blog</a></li>
+	<li><a href="">Fotos</a></li>
+	<li><a href="">Contacto</a></li>
+</ul>
+</nav>
+<aside>
+	<p>El parrafo de aside es este</p>
+	<p>otro parrafo del aside	</p>
+</aside>
+<main>
+<p> este es el primer elemento de main</p>
+<a href="https://www.youtube.com/watch?v=0GKHaQ2MpuI"> haz clic aquí y relajate un rato </a>
+<p> parrafo despues del enlace</p>
+<figure>
+<img src="https://i.blogs.es/038db3/berners-1/1366_2000.jpeg" alt="Tim berners-lee" width="700" height="450" />
+<figcaption>Tim el creador de la WEB</figcaption>
+</figure>
+<!--<video width="512" height="288" src="fuente local"></video>-->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2VM9FVH513U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p> Video del creador de Javascript</p>
+
+<!-- el video tiene que estar embebido para que funciones-->
+<h3> listas ordenadas</h3>
+<ol>
+	<li>uno</li>
+	<li>dos</li>
+	<li>tres</li>
+	<li>cuatro</li>
+</ol>
+<h3> listas desordenadas</h3>
+<ul>
+	<li>esto</li>
+	<li>esto otro</li>
+	<li>y esto tambien</li>
+	<li>y faltaba esto</li>
+</ul>
+<h3>Tablas</h3>
+
+<table border="1">
+	<caption> Mi primera tabla</caption>
+	<thead><tr><td>celda1</td><td>celda2</td></tr> </thead>
+<tbody>
+	<tr><td>celda3</td><td>celda4</td></tr>
+</tbody>
+<tfoot><tr><td>celda6</td><td>celda7</td></tr></tfoot>
+</table>
+<br/>
+<table border="1">
+	<caption> Mi segunda tabla</caption>
+<thead><tr><td colspan="2">celda con colspan de 2</td></tr> </thead>
+<tbody>
+	<tr><td rowspan="2">celda con el rowspan de 2</td>
+		<td>celda3</td>
+		<tr><td>celda4</td></tr> 
+		</tr>
+</tbody>
+<tfoot><tr><td>celda5</td><td>celda6</td></tr></tfoot>
+</table>
+
+<table border="1">
+	<caption> Mi tercera tabla</caption>
+<thead><tr><td colspan="2">ingresos</td></tr></thead>
+<tbody>
+	<tr><td rowspan="2">Enero</td></tr>
+	<tr><td>100e</td></tr>
+	<tr><td>50e</td></tr>
+	<tr><td>Febrero</td></tr> 
+	<tr><td>75e</td></tr>
+</tbody>
+</table>
+<br/>
+<table border="1">
+	<caption> Mi tercera tabla la que queria crear</caption>
+<thead><tr><td colspan="2">ingresos</td></tr></thead>
+<tbody>
+	<tr><td rowspan="3">Enero</td><td>100e</td>
+		<tr><td>50e</td></tr>
+		<tr><td>Febrero</td><td>75e</td></tr>
+		<tr></tr>
+	</tr>	
+</tbody>
+</table>
+<br/>
+
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#fff">
+<tr>
+<th>Encabezado 1</th>
+<th>Encabezado 2</th>
+<th>Encabezado 3</th>
+</tr>
+<tr>
+<td rowspan="2" valign="middle" align="left">Este texto está alineado al centro
+verticalmente y a la izquierda horizontalmente</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<br/>
+<table border="1">
+	<caption> Mi tabla con colgroup</caption>
+  <colgroup span="3"></colgroup>
+  <colgroup>
+    <col>
+    <col span="2" style="background: rgba(255, 128, 0, 0.3); border: 1px solid rgba(200, 100, 0, 0.3);">
+  </colgroup>
+  <tr>
+    <th>Ciudad</th>
+    <th>Lengua</th>
+    <th>Moneda</th>
+    <th>Área</th>
+    <th>Población</th>
+    <th>Densidad</th>
+  </tr>
+  <tr>
+    <td>Londres</td>
+    <td>Inglés</td>
+    <td>GBP</td>
+    <td>1,572.00 km<sup>2</sup></td>
+    <td>8,416,535</td>
+    <td>5,354/km<sup>2</sup></td>
+  </tr>
+  <tr>
+    <td>Washington</td>
+    <td>Inglés</td>
+    <td>USD</td>
+    <td>177.0 km<sup>2</sup></td>
+    <td>646,449</td>
+    <td>4,066/km<sup>2</sup></td>
+  </tr>
+  <tr>
+    <td>Moscú</td>
+    <td>Ruso</td>
+    <td>RUB</td>
+    <td>2,511 km<sup>2</sup></td>
+    <td>11,503,501</td>
+    <td>4,581.24/km<sup>2</sup></td>
+  </tr>
+</table>
+<h3> Formularios </h3>
+<form id="form-order">
+	<p>	
+		<label for ="name">Nombre (obligatorio)</label>
+		<input type="text" name="name" id="name" placeholder="Jhon Doe" autofocus="" autocomplete="" required=""></p>
+	<p>	
+		<label for="password">Contraseña (obligatoria)</label>
+		<input type="password" name="passwd" id="passwd" placeholder="qwe1234" pattern="[a-z]{3}[0-9]{4}" required=""/> (la contraseña debe contener 3 letras y 4 números en este orden) 
+	</p>
+	<p>
+	<label for="phone">Teléfono</label>
+	<input type="phone" name="phone" id="email" placeholder="+56912345678">	
+	</p>
+	<p>
+		<label for="email">E-mail</label>
+		<input type="email" name="email" id="email" placeholder="ejemplo@email.com">
+	</p>
+	<p>
+		<label for="website">Tu página web</label>
+		<input type="url" name="website" id="website" placeholder="https://www.tuweb.com">
+	</p>
+	<p>
+		<label for="numberexample">N° de temas</label>
+		<input type="number" name="numberexample" id="numberexample" min="2" max="14" placeholder="2" step="2"> (entre 2 y 14, solo pares)
+	</p>
+	<p>
+		<label for="deliverydate">Fecha de envío</label>
+		<input type="date" name="deliverydate" id="deliverydate" min="2022-07-16">(minimo 15 de julio del 2022)
+	</p>
+	<p>
+		<label for="colorexample">Color del item</label>
+		<input type="color" name="colorexample" id="colorexample" value="#1A33FF">
+	</p>
+	<p>
+		<label for="search">Buscar</label>
+		<input type="search" name="search" id="search">
+	</p>
+	<p>
+		<label for="points">Rango de valores</label>
+		<input type="range" name="points" id="points" min="1" max="10"> (entre 1 y 10)
+	</p>
+	<p>
+		<fieldset>
+			<legend>Selecciona una prioridad</legend>
+		<p><label ><input type="radio" name="priority" value="baja" checked=""></label>Baja</p>
+		<p><label ><input type="radio" name="priority" value="media"></label>Media</p>
+		<p><label ><input type="radio" name="priority" value="alta"></label>Alta</p>
+	    </fieldset>
+	</p>
+<p>
+		<fieldset>
+			<legend>Selecciona el tipo de envío</legend>
+		<p><label ><input type="checkbox" name="deliverytype" value="urgente" checked=""></label>Urgente</p>
+		<p><label ><input type="checkbox" name="deliverytype" value="acuse"></label>Con acuse de recibo</p>
+		<p><label ><input type="checkbox" name="deliverytype" value="reembolso"></label>Contra reembolso</p>
+	    </fieldset>
+	</p>
+	<input type="submit" value="Enviar">
+</form>
+
+</main>
+<footer> 
+	<p><a href="#">Contacto</a></p>
+	<p><a href="#">Aviso legal</a></p>
+	<p><a href="#">Copyright</a></p>
+</footer>
+<section></section>
+</body>
+</html>
